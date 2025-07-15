@@ -8,10 +8,10 @@ const clickSchema = new mongoose.Schema({
 
 const urlSchema = new mongoose.Schema({
   originalUrl: { type: String, required: true },
-  shortcode: { type: String, required: true, unique: true },
-  createdAt: { type: Date, default: Date.now },
-  expiry: { type: Date, required: true },
-  clicks: { type: Number, default: 0 },
+  shortcode: { type: String, required: true, unique: true }, // handled by function and checked if unique.
+  createdAt: { type: Date, default: Date.now }, 
+  expiry: { type: Date, required: true }, // already handled
+  clicks: { type: Number, default: 0 }, 
   clickLogs: [clickSchema],
 });
 

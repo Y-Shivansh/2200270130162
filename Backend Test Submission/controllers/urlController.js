@@ -1,4 +1,4 @@
-import Url from '../models/Url.js';
+import Url from '../model/Url.js';
 import nanoid from '../utils/generateCode.js';
 
 export const createShortUrl = async (req, res) => {
@@ -45,7 +45,7 @@ export const redirectUrl = async (req, res) => {
     urlDoc.clickLogs.push({
       timestamp: new Date(),
       referrer: req.get('Referrer') || 'Direct',
-      location: 'Unknown', // later integrate geo if needed
+      location: 'Unknown',
     });
 
     await urlDoc.save();

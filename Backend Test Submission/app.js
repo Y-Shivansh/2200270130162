@@ -1,6 +1,6 @@
 import express from 'express';
 import urlRoutes from './routes/urlRoutes.js';
-import logger from './middleware/logger.js';
+import logger from '../Logging Middleware/logger.js'
 
 const app = express();
 
