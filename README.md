@@ -1,6 +1,6 @@
 # URL Shortener Project
 
-hi this is my url shortener project!! 😊
+hi this is my url shortener project!
 
 ## what it does
 - makes long urls short
