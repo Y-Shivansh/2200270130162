@@ -1,6 +1,5 @@
 node_modules/
 .env
-urlController.jsx
 .DS_Store
 
 .vscode/
